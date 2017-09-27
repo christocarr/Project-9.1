@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web App Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+  <body>
+    <header>
+      <nav class="header-nav" role="navigation">
+        <ul class="active" id="menu">
+          <li><a href="#dashboard"><img src="icons/icon-dashboard.svg" alt="" width="25px"></a></li>
+          <li><a href="#members"><img src="icons/icon-members.svg" alt="" width="25px"></a></li>
+           <li><a href="#visits"><img src="icons/icon-visits.svg" alt="" width="25px"></a></li>
+           <li><a href="#settings"><img src="icons/icon-settings.svg" alt="" width="25px"></a></li>
+          <a class="nav-toggle" href="javascript:void(0);" onclick="menuFunction()"><img src="icons/burger-menu-icon.svg" alt="" width="25px"></a>
+        </ul>
+      </nav>
+        <img class="bell-icon" src="icons/icon-bell.svg" width="25px" alt="">
+        <img class="user-image" src="images/profile-avatar.jpeg" alt="">
+        <h2 class="user-name">Christopher Carr</h2>
+    </header>
+    <main>
+			<nav class="side-nav" role="navigation">
+				<ul>
+					<li><a href="#dashboard"><img src="icons/icon-dashboard.svg" alt="" width="25px"></a></li>
+					<li><a href="#members"><img src="icons/icon-members.svg" alt="" width="25px"></a></li>
+					 <li><a href="#visits"><img src="icons/icon-visits.svg" alt="" width="25px"></a></li>
+					 <li><a href="#settings"><img src="icons/icon-settings.svg" alt="" width="25px"></a></li>
+				</ul>
+			</nav>
+			<div class="box-container">
+				<div class="box">
+				</div>
+				<div class="box">
+				</div>
+			</div>
+    </main>
+    <footer role="contentinfo">
+    </footer> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

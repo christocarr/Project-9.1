@@ -1,0 +1,90 @@
+/*-------------------------------
+					MAIN STYLES
+--------------------------------*/
+
+/*-----------header------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Roboto', 'Open Sans', sans-serif; 
+	background-color: lavender;
+}
+
+header {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	height: 30vh;
+	width: 100%;
+	background-color: lightgray;
+	box-shadow: 10px 0px 10px black;
+}
+
+.nav-toggle {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+}
+
+.user-image {
+	position: absolute;
+	top: 5em;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 7em;
+	border-radius: 50%;
+}
+
+.user-name {
+	position: absolute;
+	top: 6em;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.bell-icon {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+
+
+/*----------upper nav----------*/
+
+
+
+
+/*---------side nav-----------*/
+
+.side-nav {
+	position: fixed;
+	z-index: 1;
+	top: 30vh;
+	left: 0;
+	width: 6em;
+	height: 100vh;
+	background-color: beige;
+}
+
+/*-------main content---------*/
+
+.box-container {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	height: 200px;
+	margin: 35vh auto 0 auto;
+	border: 1px solid black;
+}
+
+.box {
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	border: 1px solid black;
+}
