@@ -56,13 +56,27 @@ header {
 
 /*----------upper nav----------*/
 
-.header-nav ul {
-  list-style: none;
-  padding-top: 2em;
+/* nav display none */
+
+.active li {
+  display: none;
 }
 
-.header-nav ul li {
-  padding-bottom: 0.7em;
+
+/* nav display when menue icon clicked */
+
+.activeclicked {
+  padding-top: 3em;
+  margin-top: 0;
+  width: 100vw;
+  background-color: darkgray;
+  transition-duration: 0.8s;
+  transition-property: ;
+}
+
+.activeclicked li {
+  list-style: none;
+  padding-bottom: 0.8em;
 }
 
 
