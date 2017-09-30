@@ -35,7 +35,7 @@
       <h3 class="main-heading">Dashboard</h3>
       <input class="search" type="search">
       <div class="alert"><span id="alertCloseButton" href="javascript:void(0);" onclick="alertCloseFunction()"><a href="#">&#10006</a></span></div>
-      <section class="charts">
+      <section class="charts" id="dashboard">
         <h4>Traffic</h4>
         <canvas id="trafficChart"></canvas>
         <h4>Daily Traffic</h4>
@@ -44,9 +44,24 @@
         <canvas id="mobileUserChart"></canvas>
       </section>
       <section class="social-stats">
-      
+				<h4>social stats</h4>
+      	<div class="social">
+					<img src="icons/icon-facebook.svg" alt="facebook icon">
+					<p class="icon-name">facebook</p>
+					<p class="social-numbers">12,578</p>
+				</div>
+				<div class="social">
+					<img src="icons/icon-google-plus.svg" alt="google plus icon">
+					<p class="icon-name">google+</p>
+					<p class="social-numbers">8,216</p>
+				</div>
+				<div class="social">
+					<img src="icons/icon-twitter.svg" alt="twitter icon">
+					<p class="icon-name">twitter</p>
+					<p class="social-numbers">10,733</p>
+				</div>
       </section>
-      <section class="members">
+      <section class="members" id="memebers">
       
       </section>
       <section class="recent-activity">
