@@ -19,16 +19,15 @@ header {
 	z-index: 2;
 	top: 0;
 	left: 0;
-	height: 30vh;
+	height: 35vh;
 	width: 100%;
 	background-color: lightgray;
-	box-shadow: 10px 0px 10px black;
 }
 
 .nav-toggle {
 	position: absolute;
 	top: 1em;
-	left: 1em;
+	left: 2.5em;
 }
 
 .user-image {
@@ -43,6 +42,7 @@ header {
 .user-name {
 	position: absolute;
 	top: 6em;
+    text-align: center;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -50,13 +50,20 @@ header {
 .bell-icon {
 	position: absolute;
 	top: 1em;
-	right: 1em;
+	right: 2.5em;
 }
 
 
 /*----------upper nav----------*/
 
+.header-nav ul {
+  list-style: none;
+  padding-top: 2em;
+}
 
+.header-nav ul li {
+  padding-bottom: 0.7em;
+}
 
 
 /*---------side nav-----------*/
@@ -69,6 +76,10 @@ header {
 	width: 6em;
 	height: 100vh;
 	background-color: beige;
+}
+
+.side-nav ul {
+  list-style: none;
 }
 
 /*-------main content---------*/
