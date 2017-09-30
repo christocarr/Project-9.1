@@ -8,3 +8,11 @@ function menuFunction() {
         x.className = "active";
     }
 }
+
+//function for closing alert 
+
+function alertCloseFunction () {
+  let closeButton = document.getElementById("alertCloseButton");
+  let alertClose = closeButton.parentElement;
+  alertClose.className += "close";
+}

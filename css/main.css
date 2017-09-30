@@ -154,6 +154,12 @@ ul {
 	border: 1px solid black;
 }
 
+/*-------alert close-------*/
+
+.alertclose {
+  display: none;
+}
+
 /*-------------------------------
 		 Media queries
 --------------------------------*/
