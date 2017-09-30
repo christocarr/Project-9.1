@@ -1,5 +1,5 @@
 /*-------------------------------
-					MAIN STYLES
+		 MAIN STYLES
 --------------------------------*/
 
 /*-----------header------------*/
@@ -15,19 +15,22 @@ body {
 }
 
 header {
-	position: fixed;
-	z-index: 2;
-	top: 0;
-	left: 0;
-	height: 35vh;
+	position: relative;
+	margin-top: 0;
+	height: 13em;
 	width: 100%;
 	background-color: lightgray;
+}
+
+ul {
+  margin: 0;
 }
 
 .nav-toggle {
 	position: absolute;
 	top: 1em;
 	left: 2.5em;
+    margin-top: 
 }
 
 .user-image {
@@ -35,11 +38,12 @@ header {
 	top: 5em;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 7em;
+	width: 6em;
 	border-radius: 50%;
 }
 
 .user-name {
+    font-size: 1.4em;
 	position: absolute;
 	top: 6em;
     text-align: center;
@@ -62,13 +66,11 @@ header {
   display: none;
 }
 
-
 /* nav display when menue icon clicked */
 
 .activeclicked {
-  padding-top: 3em;
-  margin-top: 0;
-  width: 100vw;
+  padding-top: 3.5em;
+  margin: 0em;
   background-color: darkgray;
   transition-duration: 0.8s;
   transition-property: ;
@@ -76,9 +78,12 @@ header {
 
 .activeclicked li {
   list-style: none;
-  padding-bottom: 0.8em;
+  padding-bottom: 1em;
 }
 
+.activeclicked img {
+  width: 1.2em;
+}
 
 /*---------side nav-----------*/
 
@@ -98,6 +103,41 @@ header {
 
 /*-------main content---------*/
 
+.search, main-heading {
+  display: inline-block;
+}
+
+.main-heading {
+  font-size: 1em;
+  float: left;
+  margin: 0.7em 0 1em 1em;
+}
+
+.search {
+  float: right;
+  margin: 0.7em 1em 1em 0;
+}
+
+.alert {
+  position: absolute;
+  top: 16.3em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  min-height: 4vh;
+  max-height: 6vh;
+  background-color: red;
+  border-radius: 0.5em;
+}
+
+.alert span a {
+  float: right;
+  margin: 0.2em 0.5em 0 0;
+  text-decoration: none;
+  color: black;
+  padding: 1px;
+}
+
 .box-container {
 	display: flex;
 	flex-direction: column;
@@ -112,4 +152,29 @@ header {
 	height: 50px;
 	margin: auto;
 	border: 1px solid black;
+}
+
+/*-------------------------------
+		 Media queries
+--------------------------------*/
+
+@media screen and (min-width: 320px) {
+  .side-nav {
+    display: none;
+  }
+ 
+}
+
+@media screen and (min-width: 768px) {
+
+   .side-nav {
+     display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .side-nav {
+    display: inline-block;
+  }
 }
