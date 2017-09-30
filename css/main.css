@@ -103,19 +103,26 @@ ul {
 
 /*-------main content---------*/
 
-.search, main-heading {
+.search, main-heading, {
   display: inline-block;
 }
 
-.main-heading {
+h3 {
   font-size: 1em;
   float: left;
-  margin: 0.7em 0 1em 1em;
+  margin: 0.8em 0 1em 1em;
 }
 
 .search {
   float: right;
   margin: 0.7em 1em 1em 0;
+}
+
+h4 {
+  float: left;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  padding: 3em 0 1em 1em;
 }
 
 .alert {
@@ -138,22 +145,11 @@ ul {
   padding: 1px;
 }
 
-.box-container {
-	display: flex;
-	flex-direction: column;
-	width: 200px;
-	height: 200px;
-	margin: 35vh auto 0 auto;
-	border: 1px solid black;
+.charts {
+  width: 90vw;
+  margin: 10em auto;
+  border: 1px solid black;
 }
-
-.box {
-	width: 50px;
-	height: 50px;
-	margin: auto;
-	border: 1px solid black;
-}
-
 /*-------alert close-------*/
 
 .alertclose {
