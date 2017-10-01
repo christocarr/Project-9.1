@@ -172,16 +172,39 @@ h4 {
 	overflow: hidden;
 }
 
-.social img {
+.icon-wrapper {
+	position: relative;
 	width: 3.5em;
-	fill: white;
+	height: 3.5em;
+	background-color: darkblue;
+	border-radius: 50%;
+}
+
+.icon-wrapper img {
+	position: absolute;
+	width: 2.5em;
+	top:50%;
+	left:50%;
+  transform:translate(-50%, -50%);
+}
+
+.google-icon {
+	padding: 0.3em 0 0 0.3em;
+}
+
+.twitter-icon {
+	padding: 0.3em 0.3em 0 0.3em;
 }
 
 .icon-name {
+	display: inline-block;
+	float: right;
 	color: blue;
 }
 
 .social-numbers {
+	display: inline-block;
+	float: right;
 	font-size: 1em;
 }
 /*-------------------------------
