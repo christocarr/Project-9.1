@@ -16,6 +16,7 @@ body {
 
 header {
 	position: fixed;
+  z-index: 102;
 	top: 0;
 	margin-top: 0;
 	height: 13em;
@@ -48,10 +49,10 @@ ul {
 }
 
 .user-name {
-    font-size: 1.4em;
+  font-size: 1.4em;
 	position: absolute;
 	top: 6em;
-    text-align: center;
+  text-align: center;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -94,7 +95,7 @@ ul {
 
 .side-nav {
 	position: fixed;
-	z-index: 1;
+	z-index: ;
 	top: 30vh;
 	left: 0;
 	width: 6em;
@@ -106,7 +107,9 @@ ul {
   list-style: none;
 }
 
-/*-------main content---------*/
+/*-------------------------------
+		 MAIN CONTENT
+--------------------------------*/
 
 .search, main-heading, {
   display: inline-block;
@@ -118,17 +121,25 @@ h3 {
   margin: 0.8em 0 1em 1em;
 }
 
+section {
+	margin: auto;
+	width: 90vw;
+  padding-bottom: 2em;
+  border-bottom: 1px solid darkgray;
+}
+
 .search {
   float: right;
   margin: 0.7em 1em 1em 0;
 }
 
 h4 {
-  float: left;
   font-size: 0.7em;
   text-transform: uppercase;
-  padding: 1em 0 1em 1em;
+  padding: 2em 0 1em 1em;
 }
+
+/*----------alert----------*/
 
 .alert {
   position: absolute;
@@ -151,9 +162,7 @@ h4 {
 }
 
 .charts {
-  width: 90vw;
-  margin: 5em auto 2em auto;
-  border: 1px solid black;
+  margin: 5em auto 0 auto;
 	overflow: hidden;
 }
 
@@ -163,17 +172,24 @@ h4 {
   display: none;
 }
 
-/*-------social-------*/
+/*---------social----------*/
 
 .social {
-	width: 90vw;
-	border: solid 1px black;
+  display: flex;
+	width: 75vw;
+	border-bottom: solid 1px darkgray;
 	margin: auto;
 	overflow: hidden;
+  padding: 0.5em 0 0.5em 0;
+}
+
+.social:last-of-type {
+	border-bottom: none;
 }
 
 .icon-wrapper {
 	position: relative;
+	margin: 0.5em 0 0.5em 2em;
 	width: 3.5em;
 	height: 3.5em;
 	background-color: darkblue;
@@ -196,17 +212,88 @@ h4 {
 	padding: 0.3em 0.3em 0 0.3em;
 }
 
+.stats-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 1em 1.5em;
+}
+
 .icon-name {
-	display: inline-block;
-	float: right;
-	color: blue;
+	color: darkblue;
+  font-size: 0.8em;
+  font-weight: 800;
+	margin: 0;
 }
 
 .social-numbers {
-	display: inline-block;
-	float: right;
-	font-size: 1em;
+	font-size: 1.5em;
+	margin: 0;
+} 
+
+/*------new members-------*/
+
+.new-member {
+	display: flex;
+	justify-content: space-between;
+	width: 75vw;
+	border-bottom: solid 1px darkgray;
+	margin: auto;
+	overflow: hidden;
+  padding: 0.5em 0 0.5em 0;
 }
+
+.new-member:last-of-type {
+	border-bottom: none;
+}
+
+.new-member img {
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+}
+
+.member-details {
+	display: flex;
+	flex-direction: column;
+	margin: 0.6em 1em;
+}
+
+.member-name {
+  font-size: 0.7em;
+  font-weight: 800;
+	margin: 0;
+}
+
+.member-email {
+	color: blue;
+	font-size: 0.7em;
+	margin: 0;
+}
+
+.date {
+	font-size: 0.6em;
+}
+/*------recent activity-------*/
+
+.member-activity {
+	display: flex;
+	width: 75vw;
+	border-bottom: solid 1px darkgray;
+	margin: auto;
+	overflow: hidden;
+  padding: 0.5em 0 0.5em 0;
+}
+
+.member-activity:last-of-type {
+	border-bottom: none;
+}
+
+.member-activity img {
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+}
+
 /*-------------------------------
 		 Media queries
 --------------------------------*/
