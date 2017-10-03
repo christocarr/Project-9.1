@@ -333,6 +333,13 @@ h4 {
 	border: solid lightgray 1px;
 }
 
+input[type="button"] {
+	height: 2em;
+	color: white;
+	text-transform: uppercase;
+	background-color: royalblue;
+}
+
 /*------settings-------*/
 
 .switch-ios {
