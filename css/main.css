@@ -181,6 +181,8 @@ h4 {
 
 .social {
   display: flex;
+	justify-content: flex-start;
+	align-items: center;
 	width: 75vw;
 	border-bottom: solid 1px darkgray;
 	margin: auto;
@@ -194,7 +196,6 @@ h4 {
 
 .icon-wrapper {
 	position: relative;
-	margin: 0.5em 0 0.5em 2em;
 	width: 3.5em;
 	height: 3.5em;
 	background-color: darkblue;
@@ -283,6 +284,7 @@ h4 {
 
 .member-activity {
 	display: flex;
+	align-items: center;
 	width: 75vw;
 	border-bottom: solid 1px darkgray;
 	margin: auto;
@@ -306,8 +308,11 @@ h4 {
 }
 
 .arrow {
-	display: block;
+	float: right;
 	text-decoration: none;
+	color: royalblue;
+	padding: 0.5em;
+	
 }
 
 /*------message user-------*/
@@ -315,7 +320,11 @@ h4 {
 .message-user {
 	display: flex;
 	flex-direction: column;
-	width: 80%;
+}
+
+.message-user form {
+	width: 75vw;
+	margin: auto;
 }
 
 .message-user input {
@@ -371,7 +380,7 @@ input[type="button"] {
 
 .settings select {
 	display: block;
-	width: 80%;
+	width: 75vw;
 	margin: 1em auto;
 	border: 1px solid lightgray;
 	border-radius: 0.2em;
@@ -383,6 +392,8 @@ input[type="button"] {
 	display: inline-block;
 	width: 40%;
 }
+
+
 
 
 /*-------------------------------
