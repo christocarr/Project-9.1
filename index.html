@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
+		<link rel="stylesheet" type="text/css" href="css/toggle-switch-rem.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
   <body>
@@ -159,7 +159,7 @@
 				<label class="switch-light switch-ios" onclick="" for="notifications">
 				<strong class="switch-label">Send Email Notifications</strong>
   			<input type="checkbox" id="notifications">
-  				<span>
+  				<span aria-hidden="true">
     				<span>Off</span>
     				<span>On</span>
     				<a></a>
@@ -168,16 +168,11 @@
 				<label class="switch-light switch-ios" onclick="" for="profilePrivacy">
 				<strong class="switch-label">Set Profile to Public</strong>
   			<input type="checkbox" id="profilePrivacy">
-  				<span>
+  				<span aria-hidden="true">
     				<span>Off</span>
     				<span>On</span>
     				<a></a>
   				</span>
-				</label>
-				<!-- new switch buttons -->
-				<label class="switch">
-  				<input type="checkbox">
-  				<span class="slider round"></span>
 				</label>
 				<select name="timezone_offset" id="timezone-offset" class="timezone-select">
 					<option selected="selected">Select Timezone</option>
