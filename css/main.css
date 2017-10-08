@@ -136,7 +136,7 @@ section {
   float: right;
   margin: 0.7em 1em 1em 0;
 	border: 1px solid lightgray;
-	border-radius: 0.2em;
+	border-radius: 0.3em;
 }
 
 h4 {
@@ -159,7 +159,7 @@ h4 {
   min-height: 4vh;
   max-height: 6vh;
   background-color: royalblue;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
 }
 
 .alert span a {
@@ -321,26 +321,23 @@ h4 {
 
 /*------message user-------*/
 
-.message-user {
+.message-user form {
 	display: flex;
 	flex-direction: column;
-}
-
-.message-user form {
 	width: 75vw;
 	margin: auto;
 }
 
 .message-user input {
-	margin: 0.5em;
-	border-radius: 0.2em;
+	width: 100%;
+	border-radius: 0.3em;
 	border: solid lightgray 1px;
 }
 
 .message-user textarea {
-	width: 93%;
-	margin: auto;
-	min-height: 2em;
+	width: 100%;
+	margin: 0.5em auto;
+	min-height: 4em;
 	resize: none;
 	border-radius: 0.2em;
 	border: solid lightgray 1px;
@@ -348,6 +345,7 @@ h4 {
 
 input[type="button"] {
 	height: 2em;
+	width: 100%;
 	color: white;
 	text-transform: uppercase;
 	background-color: royalblue;
@@ -355,21 +353,6 @@ input[type="button"] {
 
 /*------settings-------*/
 
-
-.settings select {
-	display: block;
-	width: 75vw;
-	margin: 1em auto;
-	border: 1px solid lightgray;
-	border-radius: 0.2em;
-}
-
-.settings input[type="button"] {
-	border: solid 1px lightgray;
-	border-radius: 0.2em;
-	display: inline-block;
-	width: 40%;
-}  
 
 .switch-light {
 	width: 75vw;
@@ -389,6 +372,31 @@ input[type="button"] {
 		margin-right:  4.5em;
 		margin-bottom: 1em;
 }
+
+.settings select {
+	display: block;
+	width: 75vw;
+	margin: 1em auto;
+	border: 1px solid lightgray;
+	border-radius: 0.2em;
+}
+
+.settings input[type="button"] {
+	border: solid 1px lightgray;
+	border-radius: 0.2em;
+	display: inline-block;
+	width: 47%;
+}  
+
+.setting-buttons {
+	width: 75vw;
+	margin: auto;
+}
+
+.setting-buttons input:first-of-type {
+	margin-right: 0.8em;
+}
+
 
 /*-------------------------------
 		 Media queries
