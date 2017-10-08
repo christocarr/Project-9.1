@@ -39,7 +39,6 @@ ul {
 	position: absolute;
 	top: 1em;
 	left: 2.5em;
-   margin-top: 
 }
 
 .user-image {
@@ -94,6 +93,11 @@ ul {
 
 .activeclicked img {
   width: 2em;
+	padding-left: 2px;
+}
+
+.activeclicked li a img:hover {
+	
 }
 
 /*---------side nav-----------*/
@@ -466,4 +470,24 @@ input[type="button"]:hover {
   .side-nav {
     display: inline-block;
   }
+	
+	.header {
+		position: fixed;
+		height: 2vh;
+	}
+	
+	.side-nav {
+		position: fixed;
+		z-index: ;
+		top: 5vh;
+		left: 0;
+		width: 6em;
+		height: 100vh;
+		background-color: beige;
+	}
+
+	.side-nav ul {
+		list-style: none;
+	}
+
 }
