@@ -34,7 +34,7 @@
         </ul>
       </nav>
       <h3 class="main-heading">Dashboard</h3>
-      <input class="search" type="search">
+      <input class="search" type="search" placeholder="Search">
       <div class="alert"><span id="alertCloseButton" href="javascript:void(0);" onclick="alertCloseFunction()"><a href="#">&#10006</a></span></div>
       <section class="charts" id="dashboard">
         <h4>Traffic</h4>
@@ -150,8 +150,8 @@
       <section class="message-user">
 				<h4>Message User</h4>
 				<form>
-					<input type="search">
-					<textarea></textarea>
+					<input type="search" placeholder="Search for User">
+					<textarea placeholder="Message for User"></textarea>
 					<input type="button" value="Send">
 				</form>
       </section>
@@ -175,8 +175,8 @@
     				<a></a>
   				</span>
 				</label>
-				<select name="timezone_offset" id="timezone-offset" class="timezone-select">
-					<option selected="selected">Select Timezone</option>
+				<select name="timezone_offset" id="timezone-offset" class="timezone-select" required>
+					<option value="">Select Timezone</option>
 					<option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
 					<option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
 					<option value="-10:00">(GMT -10:00) Hawaii</option>

@@ -138,12 +138,32 @@ section {
   margin: 0.7em 1em 1em 0;
 	border: 1px solid lightgray;
 	border-radius: 0.3em;
+	padding: 0.5em;
+}
+
+.search::placeholder,
+.search::-webkit-input-placeholder {
+	color: lightgray;
 }
 
 h4 {
   font-size: 0.9em;
   text-transform: uppercase;
   padding: 2em 0 1em 0;
+}
+
+input[type="button"] {
+	height: 2em;
+	width: 100%;
+	color: white;
+	text-transform: uppercase;
+	background-color: royalblue;
+	transition-property: background;
+	transition-duration: 1.5s;
+}
+
+input[type="button"]:hover {
+	cursor: pointer;
 }
 
 /*----------alert----------*/
@@ -258,8 +278,8 @@ h4 {
 }
 
 .new-member img {
-	width: 3em;
-	height: 3em;
+	width: 3.5em;
+	height: 3.5em;
 	border-radius: 50%;
 }
 
@@ -288,6 +308,7 @@ h4 {
 /*------recent activity-------*/
 
 .member-activity {
+	position: relative;
 	display: flex;
 	align-items: center;
 	width: 75vw;
@@ -302,8 +323,8 @@ h4 {
 }
 
 .member-activity img {
-	width: 3em;
-	height: 3em;
+	width: 3.5em;
+	height: 3.5em;
 	border-radius: 50%;
 }
 
@@ -319,7 +340,8 @@ h4 {
 }
 
 .arrow {
-	float: right;
+	position: absolute;
+	right: 0;
 	text-decoration: none;
 	color: royalblue;
 	padding: 0.5em;
@@ -339,6 +361,11 @@ h4 {
 	width: 100%;
 	border-radius: 0.3em;
 	border: solid lightgray 1px;
+	padding: 0.5em;
+}
+
+.message-user input::placeholder {
+	color: lightgray;
 }
 
 .message-user textarea {
@@ -348,16 +375,16 @@ h4 {
 	resize: none;
 	border-radius: 0.2em;
 	border: solid lightgray 1px;
+	padding: 0.5em;
 }
 
-input[type="button"] {
-	height: 2em;
-	width: 100%;
-	color: white;
-	text-transform: uppercase;
-	background-color: royalblue;
+.message-user textarea::placeholder {
+	color: lightgray;
 }
 
+input[type="button"]:hover {
+	background-color: darkblue;
+}
 /*------settings-------*/
 
 
@@ -378,6 +405,10 @@ input[type="button"] {
     height: 2rem;
 		margin-right:  4.5em;
 		margin-bottom: 1em;
+}
+ 
+.switch-ios.switch-light > span:hover {
+	cursor: pointer;
 }
 
 .settings select {
@@ -404,6 +435,12 @@ input[type="button"] {
 
 .setting-buttons input:last-of-type {
 	background-color: lightgray;
+	transition-property: background;
+	transition-duration: 1.5s;
+}
+
+.setting-buttons input:last-of-type:hover {
+	background-color: darkgray;
 }
 
 /*-------------------------------
