@@ -39,7 +39,7 @@ ul {
 	position: absolute;
 	top: 1em;
 	left: 2.5em;
-    margin-top: 
+   margin-top: 
 }
 
 .user-image {
@@ -76,10 +76,11 @@ ul {
   display: none;
 }
 
-/* nav display when menue icon clicked */
+/* nav display when menu icon clicked */
 
 .activeclicked {
   padding-top: 3.5em;
+	padding-left: 2.5em;
   margin: 0em;
   background-color: darkblue;
   transition-duration: 0.8s;
@@ -92,7 +93,7 @@ ul {
 }
 
 .activeclicked img {
-  width: 1.2em;
+  width: 2em;
 }
 
 /*---------side nav-----------*/
@@ -127,7 +128,7 @@ h3 {
 
 section {
 	margin: auto;
-	width: 90vw;
+	width: 85vw;
   padding-bottom: 2em;
   border-bottom: 1px solid darkgray;
 }
@@ -142,7 +143,7 @@ section {
 h4 {
   font-size: 0.9em;
   text-transform: uppercase;
-  padding: 2em 0 1em 1em;
+  padding: 2em 0 1em 0;
 }
 
 /*----------alert----------*/
@@ -187,11 +188,11 @@ h4 {
   display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	width: 75vw;
-	border-bottom: solid 1px darkgray;
+	width: 65vw;
 	margin: auto;
 	overflow: hidden;
   padding: 0.5em 0 0.5em 0;
+	border-bottom: 1px solid lightgray;
 }
 
 .social:last-of-type {
@@ -246,7 +247,7 @@ h4 {
 	display: flex;
 	justify-content: space-between;
 	width: 75vw;
-	border-bottom: solid 1px darkgray;
+	border-bottom: 1px solid lightgray;
 	margin: auto;
 	overflow: hidden;
   padding: 0.5em 0 0.5em 0;
@@ -290,10 +291,10 @@ h4 {
 	display: flex;
 	align-items: center;
 	width: 75vw;
-	border-bottom: solid 1px darkgray;
 	margin: auto;
 	overflow: hidden;
   padding: 0.5em 0 0.5em 0;
+	border-bottom: 1px solid lightgray;
 }
 
 .member-activity:last-of-type {
@@ -306,8 +307,14 @@ h4 {
 	border-radius: 50%;
 }
 
-.activity, .time {
+.activity {
   font-size: 0.9em;
+	margin: 0;
+}
+
+.time {
+	font-size: 0.8em;
+	color: royalblue;
 	margin: 0;
 }
 
@@ -389,14 +396,15 @@ input[type="button"] {
 }  
 
 .setting-buttons {
+	display: flex;
+	justify-content: space-between;
 	width: 75vw;
 	margin: auto;
 }
 
-.setting-buttons input:first-of-type {
-	margin-right: 0.8em;
+.setting-buttons input:last-of-type {
+	background-color: lightgray;
 }
-
 
 /*-------------------------------
 		 Media queries
