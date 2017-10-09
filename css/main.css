@@ -423,6 +423,14 @@ input[type="button"]:hover {
 	border-radius: 0.2em;
 }
 
+select {
+	color: lightgray;
+}
+
+option:not(hidden) {
+	color: black;
+}
+
 .settings input[type="button"] {
 	border: solid 1px lightgray;
 	border-radius: 0.2em;
