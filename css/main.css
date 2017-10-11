@@ -176,14 +176,17 @@ input[type="button"]:hover {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-  position: absolute;
+  position: fixed;
   top: 16.3em;
   left: 50%;
+	z-index: 104;
   transform: translate(-50%, -50%);
   width: 90vw;
   min-height: 4vh;
   max-height: 6vh;
   background-color: royalblue;
+	
+	box-shadow: 5px 5px 5px lightgray;
   border-radius: 0.3em;
 }
 
@@ -517,17 +520,13 @@ option:not(hidden) {
 		margin-left: 3em;
 	}
 	
-	main {
-		margin: 5em 1em 0 8em;
-		width: 90%;
+	main,
+	section {
+		width: 100%;
 	}
 	
 	.main-heading {
 		margin-left: 0;
-	}
-	
-	section {
-		width: 100%;
 	}
 	
 	.main-search {
@@ -548,7 +547,48 @@ option:not(hidden) {
 	}
 	
 	.charts {
-		margin: 20em 0 0 0;
+		width: 100%;
+		margin: 0 0 0 6em;
+		padding-bottom: 0;
+	}
+	
+	.traffic-chart {
+		width: 100%;
+		margin: 0 0 2em 2em;
+	}
+	
+	#trafficChart {
+		width: 90% !important;
+		max-height: 500px !important;
+	}
+	
+	.daily-traffic-chart {
+		width: 50%;
+		float: left;
+		border-top: 1px solid darkgray;
+		border-right: 1px solid darkgray;
+	}
+	
+	.daily-traffic-chart h4,
+	.mobile-user-chart h4 {
+		margin-left: 2em;
+	}
+	
+	#dailyTrafficChart {
+		width: 85% !important;
+		height: auto !important;
+		margin: 0 0 2em 2em;
+	}
+	
+	.mobile-user-chart {
+		width: 50%;
+		float: right;
+		border-top: 1px solid darkgray;
+	}
+	
+	#mobileUserChart {
+		width: 85% !important;
+		height: auto !important;
 	}
 
 }

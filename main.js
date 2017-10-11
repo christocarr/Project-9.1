@@ -25,9 +25,6 @@ const dlyTrfChrt = document.getElementById('dailyTrafficChart');
 
 const mblUsrChrt = document.getElementById('mobileUserChart');
 
-
-Chart.defaults.global.legend.display = false; //display charts with no legend
-
 //traffic chart
 
 let trafficChart = new Chart(trfChrt, {
@@ -36,7 +33,7 @@ let trafficChart = new Chart(trfChrt, {
 			labels: ["20-25", "26-30", "1-5", "6-10", "11-15", "16-20", "21-25", "26-31", "1-5"],
 			datasets: [{
 				label: '',
-				data: [0, 160, 200, 190, 240,150, 360, 280, 420],
+				data: [0, 500, 1200, 700, 1240, 1150, 2360, 2280, 2420],
 				backgroundColor: [
 					'rgba(54, 162, 235, 0.2)',
 				],
@@ -48,10 +45,20 @@ let trafficChart = new Chart(trfChrt, {
 			}]
 	},
 	options: {
+		legend: {
+			display: false		
+		},
+
 		scales: {
 			yAxes: [{
+				gridLines: {
+						drawTicks: false,
+						
+				},
 				ticks: {
-						beginAtZero:true
+						beginAtZero:true,
+						stepSize: 500,
+						min: 0,
 				}
 			}]
 		}
@@ -90,11 +97,14 @@ let dailyTrafficChart = new Chart(dlyTrfChrt, {
 			}]
 	},
 	options: {
+		legend: {
+			display: false		
+		},
 		scales: {
 			yAxes: [{
 				gridLines: {
 						drawTicks: false,
-						offsetGridLines: true
+						offsetGridLines: false
 				},
 				ticks: {
 						beginAtZero:false,
