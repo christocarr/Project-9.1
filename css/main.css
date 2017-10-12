@@ -608,9 +608,14 @@ option:not(hidden) {
 	}
 	
 	.social {
-		width: 30%;
+		width: 27%;
 		border: 1px solid lightgray;
 		border-radius: 0.4em;
+		margin: 0 1em 0 2em;
+	}
+	
+	.social:last-of-type {
+		border: 1px solid lightgray;
 	}
 	
 	/*------------Members-----------*/
