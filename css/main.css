@@ -509,7 +509,7 @@ option:not(hidden) {
 	}
 
 	.side-nav {
-     display: inline-block;
+    display: inline-block;
 		position: fixed;
 		top: 10vh;
   }
@@ -546,7 +546,10 @@ option:not(hidden) {
 		width: 40%;
 	}
 	
-	.charts {
+	/*----------------Charts-----------*/
+	
+	.charts,
+	.social-stats {
 		width: 100%;
 		margin: 0 0 0 6em;
 		padding-bottom: 0;
@@ -562,7 +565,7 @@ option:not(hidden) {
 		max-height: 500px !important;
 	}
 	
-	.daily-traffic-chart {
+	.daily-traffic-chart {  /*canvas container*/
 		width: 50%;
 		float: left;
 		border-top: 1px solid darkgray;
@@ -580,7 +583,7 @@ option:not(hidden) {
 		margin: 0 0 2em 2em;
 	}
 	
-	.mobile-user-chart {
+	.mobile-user-chart {  /*canvas container*/
 		width: 50%;
 		float: right;
 		border-top: 1px solid darkgray;
@@ -590,5 +593,108 @@ option:not(hidden) {
 		width: 85% !important;
 		height: auto !important;
 	}
+	
+	/*-------------Social Stats-----------*/
 
+	.social-stats {
+		padding-bottom: 2em;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.social-stats h4 {
+		margin-left: 2em;
+		flex: 1 0 100%;
+	}
+	
+	.social {
+		width: 30%;
+		border: 1px solid lightgray;
+		border-radius: 0.4em;
+	}
+	
+	/*------------Members-----------*/
+
+	.members {
+		width: 50%;
+		margin: 0 0 0 6em;
+		float: left;
+		border-right: 1px solid lightgray;
+	}
+	
+	.members h4 {
+		margin-left: 2em;
+		display: inline-block;
+	}
+	
+	.new-member {
+		width: 90%;
+		margin-left: 2em;
+	}
+	
+	/*------------Recent Activity-----------*/
+	
+	.recent-activity {
+		width: 42.87%;
+		float: right;
+	}
+	
+	.recent-activity h4 {
+		display: inline-block;
+		width: 50%;
+		margin-left: 2em;
+	}
+	
+	.member-activity {
+		width: 80%;
+		margin-left: 2em;
+	
+	}
+	
+	/*----------Message User-----------*/
+	
+	.message-user {
+		width: 50%;
+		float: left;
+		margin: 0 0 0 6em;
+		border-bottom: none;
+		border-right: 1px solid lightgray;
+	}
+	
+	.message-user h4 {
+		display: inline-block;
+		margin-left: 2em;
+	}
+	
+	.message-user form {
+		width: 80%;
+		margin-left: 2em;
+	}
+	
+	/*----------Settings----------*/
+	
+	.settings {
+		width: 40%;
+		float: right;
+		border-bottom: none;
+	}
+	
+	.settings h4 {
+		margin: 0;
+	}
+	
+	.switch-light {
+		width: 90%;
+		margin: 0;
+	}
+	
+	.settings select {
+		width: 90%;
+		margin-left: 0;
+	}
+	
+	.setting-buttons {
+		width: 90%;
+		margin: 0;
+	}
 }
