@@ -380,7 +380,7 @@ input[type="button"]:hover {
 	margin: 0.5em auto;
 	min-height: 4em;
 	resize: none;
-	border-radius: 0.2em;
+	border-radius: 0.3em;
 	border: solid lightgray 1px;
 	padding: 0.5em;
 }
@@ -423,7 +423,7 @@ input[type="button"]:hover {
 	width: 75vw;
 	margin: 1em auto;
 	border: 1px solid lightgray;
-	border-radius: 0.2em;
+	border-radius: 0.3em;
 }
 
 select {
@@ -436,7 +436,7 @@ option:not(hidden) {
 
 .settings input[type="button"] {
 	border: solid 1px lightgray;
-	border-radius: 0.2em;
+	border-radius: 0.3em;
 	display: inline-block;
 	width: 47%;
 }  
@@ -484,35 +484,72 @@ option:not(hidden) {
 		height: 10vh;
 	}
 	
+	.app-icon {
+		display: inline-block;
+		font-family: 'Open Sans';
+		font-size: 0.8em;
+		color: white;
+	}
+	
+	.app-icon h1 {
+		padding-left: 0.6em;
+		font-weight: bold;
+	}
+	
+	.app-icon span {
+		font-weight: 100;
+	}
+	
+	
+	
 	header nav {
 		display: none;
 	}
 
 	.user-image {
 		width: 3.5em;
-		top: 0.8em;
-		left: 78%;
+		top: 0.5em;
+		left: 84vw;
 		transform: none;
 	}
 	
 	.user-name {
+		display: inline-block;
 		width: 10em;
 		margin: 0;
-		top: 1em;
-		right: 0%;
+		top: 1.5em;
+		left: 87vw;
 		transform: none;
+		font-size: 1em;
 	}
 	
 	.bell-icon {
-		right: 22em;
-		top: 1.7em;
+		display: inline-block;
+		left: 78vw;
+		top: 1.4em;
+	}
+	
+	.bell-icon:hover {
+		cursor: pointer;
 	}
 
+	/*-------------Navigation-----------*/
+	
 	.side-nav {
     display: inline-block;
 		position: fixed;
 		top: 10vh;
   }
+	
+	.side-nav ul {
+		padding: 2em;
+	}
+	
+	.side-nav ul li{
+		padding-bottom: 2em;
+	}
+	
+	/*--------End of Navigation-------*/
 	
 	.alert {
 		top: 11em;
@@ -526,7 +563,10 @@ option:not(hidden) {
 	}
 	
 	.main-heading {
-		margin-left: 0;
+		position: absolute;
+		top: 11vh;
+		left: 7vw;
+		font-size: 1.5em;
 	}
 	
 	.main-search {
@@ -604,6 +644,8 @@ option:not(hidden) {
 		padding-bottom: 2em;
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-bottom: 3em;
 	}
 	
 	.social-stats h4 {
@@ -612,23 +654,33 @@ option:not(hidden) {
 	}
 	
 	.social {
-		width: 27%;
+		width: 25%;
 		border: 1px solid lightgray;
 		border-radius: 0.4em;
 		margin: 0 1em 0 2em;
+		background-color: aliceblue;
 	}
 	
 	.social:last-of-type {
 		border: 1px solid lightgray;
 	}
 	
+	.icon-wrapper {
+		margin-left: 2em;
+	}
+	
+	.social-numbers {
+		font-size: 2em;
+	}
+	
 	/*------------Members-----------*/
 
 	.members {
-		width: 50%;
+		width: 45vw;
 		margin: 0 0 0 6em;
 		float: left;
 		border-right: 1px solid lightgray;
+		padding-left: 2em;
 	}
 	
 	.members h4 {
@@ -644,8 +696,10 @@ option:not(hidden) {
 	/*------------Recent Activity-----------*/
 	
 	.recent-activity {
-		width: 42.8%;
-		float: right;
+		width: 45vw;
+		display: inline-block;
+		float: left;
+		padding-left: 2em;
 	}
 	
 	.recent-activity h4 {
@@ -663,11 +717,13 @@ option:not(hidden) {
 	/*----------Message User-----------*/
 	
 	.message-user {
-		width: 50%;
+		width: 45vw;
 		float: left;
 		margin: 0 0 0 6em;
 		border-bottom: none;
 		border-right: 1px solid lightgray;
+		padding-left: 2em;
+		padding-bottom: 3em;
 	}
 	
 	.message-user h4 {
@@ -680,16 +736,23 @@ option:not(hidden) {
 		margin-left: 2em;
 	}
 	
+	.message-user textarea {
+		min-height: 6em;
+	}
+	
 	/*----------Settings----------*/
 	
 	.settings {
-		width: 40%;
+		width: 45vw;
 		float: right;
 		border-bottom: none;
+		padding-left: 1em;
+		padding-bottom: 3em;
 	}
 	
 	.settings h4 {
-		margin: 0;
+		display: inline-block;
+		
 	}
 	
 	.switch-light {
