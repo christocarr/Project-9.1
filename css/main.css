@@ -550,14 +550,18 @@ option:not(hidden) {
 	
 	.charts,
 	.social-stats {
-		width: 100%;
+		width: 90vw;
 		margin: 0 0 0 6em;
 		padding-bottom: 0;
 	}
 	
 	.traffic-chart {
-		width: 100%;
+		width: 100vw;
 		margin: 0 0 2em 2em;
+	}
+	
+	.traffic-chart h4 {
+		width: 90vw;
 	}
 	
 	#trafficChart {
@@ -604,7 +608,7 @@ option:not(hidden) {
 	
 	.social-stats h4 {
 		margin-left: 2em;
-		flex: 1 0 100%;
+		flex: 1 0 90%;
 	}
 	
 	.social {
@@ -640,7 +644,7 @@ option:not(hidden) {
 	/*------------Recent Activity-----------*/
 	
 	.recent-activity {
-		width: 42.87%;
+		width: 42.8%;
 		float: right;
 	}
 	
