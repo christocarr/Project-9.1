@@ -187,19 +187,19 @@ input[type="button"]:hover {
 .alert {
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: space-between;
   position: fixed;
   top: 16.3em;
   left: 50%;
 	z-index: 104;
   transform: translate(-50%, -50%);
   width: 90vw;
-  min-height: 4vh;
-  max-height: 6vh;
+  min-height: 6vh;
+  max-height: auto;
   background-color: royalblue;
-	
 	box-shadow: 5px 5px 5px lightgray;
   border-radius: 0.3em;
+	padding-left: 0.5em;
 }
 
 .alert span a {
@@ -207,14 +207,13 @@ input[type="button"]:hover {
   margin: 0.2em 0.5em 0 0;
   text-decoration: none;
   color: white;
-  padding: 1px;
+  padding: 0 0.5em;
 }
 
 .alert p {
 	color: white;
 	display: inline-block;
 	font-weight: lighter;
-	padding-right: 1em;
 }
 
 .alert p span {
@@ -256,6 +255,7 @@ input[type="button"]:hover {
 	height: 3.5em;
 	background-color: royalblue;
 	border-radius: 50%;
+	margin-left: 2em;
 }
 
 .icon-wrapper img {
@@ -495,9 +495,25 @@ option:not(hidden) {
 
 @media screen and (min-width: 768px) {
 
+	h3 {
+		font-size: 1.5em;	
+		margin: 1em 0 0 2em;
+	}
+	
    .side-nav {
      display: none;
   }
+	
+	section,
+	.member-activity,
+	.new-member,
+	.message-user form,
+	.setting-buttons,
+	.settings select {
+		width: 70vw;
+	}
+	
+	
 }
 
 @media screen and (min-width: 1024px) {
