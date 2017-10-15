@@ -70,6 +70,16 @@ ul {
 	right: 2.5em;
 }
 
+.notification-dot {
+		position: absolute;
+		top: 1em;
+		right: 2.5em;
+		z-index: 1005;
+		width: 1em;
+		height: 1em;
+		background-color: lightgreen;
+		border-radius: 50%;
+	}
 
 /*----------upper nav----------*/
 
@@ -581,7 +591,7 @@ option:not(hidden) {
 
 	.user-image {
 		width: 3.5em;
-		top: 0.5em;
+		top: 0.8em;
 		left: 84vw;
 		transform: none;
 	}
@@ -590,7 +600,7 @@ option:not(hidden) {
 		display: inline-block;
 		width: 10em;
 		margin: 0;
-		top: 1.5em;
+		top: 1.7em;
 		left: 87vw;
 		transform: none;
 		font-size: 1em;
@@ -604,6 +614,11 @@ option:not(hidden) {
 	
 	.bell-icon:hover {
 		cursor: pointer;
+	}
+	
+	.notification-dot {
+		top: 1.3em;
+		left: 79vw;
 	}
 
 	/*-------------Navigation-----------*/

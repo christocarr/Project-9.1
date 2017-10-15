@@ -22,6 +22,7 @@
           <a class="nav-toggle" href="javascript:void(0);" onclick="menuFunction()"><img src="icons/burger-menu-icon.svg" alt="" width="25px"></a>
         </ul>
       </nav>
+				<div class="notification-dot"></div>
         <img class="bell-icon" src="icons/icon-bell.svg" width="25px" alt="">
         <img class="user-image" src="images/profile-avatar.jpeg" alt="">
         <h2 class="user-name">Christopher Carr</h2>
@@ -167,11 +168,12 @@
       <section class="message-user">
 				<h4>Message User</h4>
 				<form>
-					<input type="search" placeholder="Search for User">
-					<textarea placeholder="Message for User"></textarea>
-					<input type="button" value="Send">
+					<input type="search" placeholder="Search for User" id="userSearch" required>
+					<textarea placeholder="Message for User" id="userMessage" required></textarea>
+					<input type="button" value="Send" id="messageSend">
 				</form>
       </section>
+			<!-------- settings ------->
       <section class="settings" id="settings">
       	<h4>Settings</h4>
 				<label class="switch-light switch-ios" onclick="" for="notifications">

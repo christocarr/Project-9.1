@@ -138,3 +138,24 @@ let mobileUserChart = new Chart(mblUsrChrt, {
 		segmentShowStroke: false
 	}
 });
+
+//message user functionality
+
+	let userSearch = document.getElementById('userSearch');
+	let userMessage = document.getElementById('userMessage');
+
+document.getElementById('messageSend').addEventListener ('click', () => {
+	
+	if (userSearch.value.length ===0 || userMessage.value.length === 0) {
+		alert('Please Search for User and send them a message');
+		return false;
+	} else {
+		alert('Message Sent');
+	}
+})
+
+
+
+
+
+
