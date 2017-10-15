@@ -27,6 +27,8 @@ const mblUsrChrt = document.getElementById('mobileUserChart');
 
 //traffic chart
 
+Chart.defaults.global.elements.point.backgroundColor = 'rgba(255, 255, 255, 1)';
+
 let trafficChart = new Chart(trfChrt, {
 	type: 'line',
 	data: {
@@ -110,6 +112,7 @@ let dailyTrafficChart = new Chart(dlyTrfChrt, {
 });
 
 //mobile user chart
+Chart.defaults.global.elements.arc.borderWidth = 0;
 
 let mobileUserChart = new Chart(mblUsrChrt, {
     type: 'doughnut',

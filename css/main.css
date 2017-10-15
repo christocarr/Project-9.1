@@ -163,6 +163,7 @@ section {
 }
 
 h4 {
+	display: inline-block;
   font-size: 0.9em;
   text-transform: uppercase;
   padding: 2em 0 1em 0;
@@ -221,15 +222,48 @@ input[type="button"]:hover {
 	font-weight: bold;
 }
 
-.charts {
-  margin: 5em auto 0 auto;
-	overflow: hidden;
-}
-
 /*-------alert close-------*/
 
 .alertclose {
   display: none;
+}
+
+/*---------charts----------*/
+
+.traffic-chart-nav {
+	float: right;
+	margin: 2.5em 0.5em 0 0;
+}
+
+.traffic-chart-nav li {
+	display: inline-block;
+	list-style: none;
+	min-width: 5em;
+	height: 2em;
+	text-align: center;
+	font-weight: 500;
+	font-size: 0.9em;
+	padding: 0.5em;
+	margin-left: 0.8em;
+	border-radius: 0.8em;
+	transition-property: border;
+	transition-duration: 0.6s;
+}
+
+.traffic-chart-nav li:hover {
+	cursor: pointer;
+	border: solid 1px royalblue;
+}
+
+.traffic-chart-nav li.active {
+	border: solid 1px royalblue;
+	background-color: royalblue;
+	color: white
+}
+
+.charts {
+  margin: 5em auto 0 auto;
+	overflow: hidden;
 }
 
 /*---------social----------*/
@@ -632,6 +666,11 @@ option:not(hidden) {
 	
 	/*----------------Charts-----------*/
 	
+	.traffic-chart-nav {
+		float: right;
+		margin-right: 12em;
+	}
+	
 	.charts,
 	.social-stats {
 		width: 90vw;
@@ -642,10 +681,6 @@ option:not(hidden) {
 	.traffic-chart {
 		width: 100vw;
 		margin: 0 0 2em 2em;
-	}
-	
-	.traffic-chart h4 {
-		width: 90vw;
 	}
 	
 	#trafficChart {
